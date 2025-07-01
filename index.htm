@@ -20,7 +20,7 @@
       margin: 0;
       padding: 0;
       background: #000;
-      color: #aefcff; /* soft cyan text */
+      color: #aefcff;
     }
     .container, audio, footer {
       display: none;
@@ -39,9 +39,9 @@
       width: 90%;
       max-width: 800px;
       margin: 5rem auto;
-      background: rgba(10, 20, 40, 0.7); /* cool dark blue */
+      background: rgba(10, 20, 40, 0.7);
       padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3); /* neon cyan glow */
+      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
       border-radius: 12px;
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
@@ -120,6 +120,8 @@
       <h2>Contact</h2>
       <p><a href="https://www.tiktok.com/@cbft.aep">TikTok</a></p>
       <p><a href="https://www.youtube.com/@cbftaep">YouTube</a></p>
+      <p><a href="https://www.instagram.com/cbft.aep/?__pwa=1">Instagram</a></p>
+      <p><a href="https://payhip.com/cbftaep">Payhip</a></p>
     </div>
   </div>
 
@@ -135,11 +137,7 @@
       const audio = document.getElementById("bg-music");
       audio.classList.add("loaded");
 
-      audio.play().then(() => {
-        console.log("Audio playing.");
-      }).catch(err => {
-        console.error("Audio playback failed:", err);
-      });
+      audio.play().catch(err => console.log("Audio play error:", err));
     }
   </script>
 </body>
