@@ -1,86 +1,145 @@
-<style>
-  body, html {
-    height: 100%;
-  }
-  body {
-    font-family: 'Courier New', monospace;
-    margin: 0;
-    padding: 0;
-    background: #000;
-    color: #ccffff; /* New text color */
-  }
-  .container, audio, footer {
-    display: none;
-  }
-  .container.loaded, audio.loaded, footer.loaded {
-    display: block;
-  }
-  body.loaded {
-    background-image: url(https://media.discordapp.net/attachments/1375428819330011197/1389221497322864792/madison-beer-7680x4320-21013.jpg?ex=68647d97&is=68632c17&hm=8aa2b7e43c961dc7552cbc16cb0fe43a10f708d042f28259a2660bc9aa2d716d&=&format=webp&width=1522&height=856);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  .container {
-    width: 90%;
-    max-width: 800px;
-    margin: 5rem auto;
-    background: rgba(0, 70, 90, 0.6); /* New box color */
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2); /* New glow */
-    border-radius: 12px;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(0, 255, 255, 0.3); /* New border */
-    text-align: center;
-  }
-  .section {
-    margin-bottom: 2rem;
-  }
-  .section h2 {
-    margin-top: 0;
-    border-bottom: 2px solid #00ff99; /* green accent line */
-    padding-bottom: .5rem;
-    color: #66ffff; /* New heading color */
-  }
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 1rem;
-    border: 3px solid #66ffff; /* Match heading */
-  }
-  a {
-    color: #00ff99; /* New link color */
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: rgba(0, 0, 0, 0.3);
-    font-size: .9rem;
-    color: #99ddff; /* New footer color */
-    border-top: 1px solid rgba(0, 255, 255, 0.3);
-  }
-  #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>cbft.aep</title>
+  <meta name="description" content="hi">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="vamp.city">
+  <meta property="og:description" content="hi">
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1375428819330011197/1389218018139181170/mypfp.jpg?ex=68647a59&is=686328d9&hm=1856a86f1a6e80445066df96d86442dc2127ec7c494fc54f91f8c465be517e68&=&format=webp">
+
+  <style>
+    body, html {
+      height: 100%;
+    }
+    body {
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #ffb6ff;
+    }
+    .container, audio, footer {
+      display: none;
+    }
+    .container.loaded, audio.loaded, footer.loaded {
+      display: block;
+    }
+    body.loaded {
+      background-image: url(https://media.discordapp.net/attachments/1375428819330011197/1389221497322864792/madison-beer-7680x4320-21013.jpg?ex=68647d97&is=68632c17&hm=8aa2b7e43c961dc7552cbc16cb0fe43a10f708d042f28259a2660bc9aa2d716d&=&format=webp&width=1522&height=856);
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 5rem auto;
+      background: rgba(36, 0, 54, 0.6);
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(255, 0, 255, 0.2);
+      border-radius: 12px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 182, 255, 0.3);
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #f6c;
+      padding-bottom: .5rem;
+      color: #f9f;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1rem;
+      border: 3px solid #f9f;
+    }
+    a {
+      color: #f6c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: rgba(0,0,0,0.3);
+      font-size: .9rem;
+      color: #fcf;
+      border-top: 1px solid rgba(255,182,255,0.3);
+    }
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="overlay" onclick="startSite()">click to enter</div>
+
+  <audio id="bg-music" loop preload="auto">
+    <source src="myaudio.m4a" type="audio/mp4">
+    Your browser doesn't support audio.
+  </audio>
+
+  <div id="main" class="container">
+    <div id="about" class="section">
+      <h2>cbft</h2>
+      <p>after effects editor</p>
+      <img alt="Your Photo" class="profile-pic" src="mypfp.jpg">
+      <p>he/him<br>editor of 2 years</p>
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contact</h2>
+      <p><a href="https://www.tiktok.com/@cbft.aep">TikTok</a></p>
+      <p><a href="https://www.youtube.com/@cbftaep">YouTube</a></p>
+    </div>
+  </div>
+
+  <footer id="footer">© this shit tuff as fuck.</footer>
+
+  <script>
+    function startSite() {
+      document.getElementById("overlay").style.display = "none";
+      document.body.classList.add("loaded");
+      document.getElementById("main").classList.add("loaded");
+      document.getElementById("footer").classList.add("loaded");
+
+      const audio = document.getElementById("bg-music");
+      audio.classList.add("loaded");
+
+      audio.play().then(() => {
+        console.log("Audio playing.");
+      }).catch(err => {
+        console.error("Audio playback failed:", err);
+      });
+    }
+  </script>
+</body>
+</html>
