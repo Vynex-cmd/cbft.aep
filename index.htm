@@ -97,6 +97,32 @@
       cursor: pointer;
       font-size: 1.5rem;
     }
+
+    /* Added credit box */
+    #music-credit {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #aefcff;
+      font-size: 0.75rem;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      box-shadow: 0 0 10px #00ffffaa;
+      max-width: 250px;
+      z-index: 1100;
+      text-align: right;
+      line-height: 1.2;
+    }
+    #music-credit a {
+      color: #9efeff;
+      text-decoration: none;
+    }
+    #music-credit a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
   </style>
 </head>
 
@@ -126,6 +152,12 @@
   </div>
 
   <footer id="footer">© this shit tuff as fuck.</footer>
+
+  <!-- Music credit box -->
+  <div id="music-credit">
+    Music: <a href="http://ncs.io/royaltyfunk" target="_blank" rel="noopener noreferrer">LXNGVX - Royalty Funk</a><br>
+    Provided by <a href="https://ncs.io" target="_blank" rel="noopener noreferrer">NoCopyrightSounds (NCS)</a>
+  </div>
 
   <script>
     function startSite() {
